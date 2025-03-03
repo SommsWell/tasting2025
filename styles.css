@@ -15,7 +15,7 @@ header {
 }
 
 .slider img {
-    width: 100%;
+    width: 33%; /* Reduce size to 1/3 */
     height: auto;
     border-radius: 5px;
 }
@@ -33,6 +33,16 @@ header {
 
 .logos img:hover {
     transform: scale(1.1);
+}
+
+/* Adjust Dealer 2 logo size to 150% */
+.logos img[src*="Dealer2.png"] {
+    width: 225px;
+}
+
+/* Adjust Dealer 5 logo size to 200% */
+.logos img[src*="Dealer5.png"] {
+    width: 300px;
 }
 
 .catalogus {
