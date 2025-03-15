@@ -7,14 +7,14 @@ body {
 }
 
 header {
-    background-color: #8B0000;
+    background: url('https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/banner.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 60px;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-}
+} 
 
 .dealers {
     text-align: center;
