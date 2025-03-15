@@ -52,6 +52,16 @@ header {
     }
 }
 
+a {
+    text-decoration: none;
+    color: #8B0000;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .dealers {
     text-align: center;
     padding: 40px 20px;
