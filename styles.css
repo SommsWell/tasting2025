@@ -12,47 +12,40 @@ header {
     text-align: center;
     padding: 20px;
     font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .dealers {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: white;
 }
 
 .logos img {
     width: 150px;
     margin: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .logos img:hover {
     transform: scale(1.1);
 }
 
-/* Adjust Dealer 2 logo size to 150% */
-.logos img[src*="Dealer2.png"] {
-    width: 300px;
-}
-
-/* Adjust Dealer 5 logo size to 200% */
-.logos img[src*="Dealer5.png"] {
-    width: 400px;
-}
-
-/* Adjust Dealer 2 logo size to 150% */
-.logos img[src*="Dealer1.png"] {
-    width: 300px;
-}
-
 .catalogus {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: white;
 }
 
 .catalogus img {
-    width: 100px;
+    width: 120px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.catalogus img:hover {
+    transform: scale(1.1);
 }
 
 .upcoming-event {
@@ -60,52 +53,60 @@ header {
     background-color: #f8f8f8;
     text-align: center;
     font-size: 18px;
+    border-top: 5px solid #8B0000;
+}
+
+.clickable-image {
+    width: 500px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clickable-image:hover {
+    transform: scale(1.05);
 }
 
 .events {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .event {
     margin-bottom: 20px;
     background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+}
+
+.event img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.event img:hover {
+    transform: scale(1.1);
 }
 
 .contact {
-    background-color: #fff;
-    padding: 20px;
-    width: 50%;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact label {
-    display: block;
-    margin-top: 10px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .contact button {
-    margin-top: 15px;
-    padding: 10px;
+    padding: 15px 20px;
     background-color: #8B0000;
     color: white;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    transition: background-color 0.3s;
 }
 
 .contact button:hover {
@@ -114,8 +115,9 @@ header {
 
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #8B0000;
     color: white;
     margin-top: 20px;
+    font-size: 14px;
 }
