@@ -89,10 +89,25 @@ a:hover {
     gap: 20px;
 }
 
-.logos img {
-    width: 150px;
-    margin: 10px;
-    transition: transform 0.3s ease-in-out;
+/* Individual sizes for each dealer */
+.logos img[alt="Wijnstroom"] {
+    width: 180px;
+}
+
+.logos img[alt="Dealer 3"] {
+    width: 140px;
+}
+
+.logos img[alt="Dealer 4"] {
+    width: 160px;
+}
+
+.logos img[alt="Dealer 5"] {
+    width: 200px;
+}
+
+.logos img[alt="Whiskymine"] {
+    width: 220px;
 }
 
 .logos img:hover {
