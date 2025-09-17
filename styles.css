@@ -63,53 +63,31 @@ body{
 }
 .top-nav a:hover{ background:rgba(255,255,255,.12); transform:translateY(-1px); border-color:rgba(255,255,255,.4) }
 
-/* ====== Hero ====== */
+/* ====== Hero (geen witte doos) ====== */
 .hero{
-  background:
-    radial-gradient(1200px 400px at 20% -10%, rgba(255,255,255,.25), transparent 60%),
-    linear-gradient(180deg, #ffffff 0%, #fff 40%, #f9f9f9 100%);
-  padding:26px 0 10px;
+  background:linear-gradient(135deg, var(--brand) 0%, #b31212 70%);
+  color:#fff;
+  padding:34px 0 22px;
+  box-shadow:var(--shadow-soft);
 }
-.hero-inner{
-  margin-bottom:14px;
-}
+.hero-inner{ margin-bottom:0; }
 .hero-title{
   margin:6px 0 4px;
   font-size:clamp(26px, 4vw, 40px);
   font-weight:900;
+  color:#fff;
+  text-shadow:0 2px 8px rgba(0,0,0,.2);
 }
-.hero-subtitle{ color:var(--muted); margin:0 0 6px }
+.hero-subtitle{
+  color:rgba(255,255,255,.9);
+  margin:0;
+}
 
-/* ====== Slider (scroll-snap, no JS) ====== */
-.slider{
-  position:relative;
-  border-radius:var(--radius);
-  overflow:hidden;
-  background:var(--surface);
-  box-shadow:var(--shadow);
-}
-.slides{
-  display:flex;
-  gap:8px;
-  overflow:auto;
-  scroll-snap-type:x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding:8px;
-}
-.slides img{
-  height:min(42vh, 420px);
-  width:auto; max-width:95%;
-  border-radius:12px;
-  object-fit:cover;
-  scroll-snap-align:center;
-  flex:0 0 auto;
-  box-shadow:var(--shadow-soft);
-}
-.slider-hint{
-  position:absolute; right:10px; bottom:10px;
-  background:rgba(0,0,0,.55); color:#fff; font-size:12px;
-  padding:6px 8px; border-radius:999px;
-}
+/* ====== Slider (niet meer gebruikt – mag blijven of verwijderen) ====== */
+.slider{ display:none; }              /* <- uit beeld voor de zekerheid */
+.slides{ display:none; }
+.slides img{ display:none; }
+.slider-hint{ display:none; }
 
 /* ====== Cards & grids ====== */
 .card-grid{
