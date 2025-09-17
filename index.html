@@ -1,83 +1,167 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sommeliers events</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sommeliers events</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="color-scheme" content="light">
 </head>
 <body>
-    <header>
-        <h1>Sommeliers events</h1>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Sommeliers events</h1>
+      <nav class="top-nav" aria-label="Hoofdmenu">
+        <a href="#volgende">Volgende tasting</a>
+        <a href="#catalogus">Catalogus</a>
+        <a href="#dealers">Wijnhandelaars</a>
+        <a href="#archief">Voorbije events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
- <section class="upcoming-event">
-        <div class="container">
-            <h2>Spring Tasting @ Keizersberg (Leuven)</h2>
-            <h3>Zaterdag 26 en zondag 27 april</h3>
-            <p>Kom genieten van een unieke wijnproeverij in een betoverende setting!</p>
-            <img class="clickable-image" src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/april2025.jpg" alt="Lente tasting 2025">
-            <p><span class="highlight">📍 Locatie:</span> De prachtige, historische Abdij Keizersberg, Leuven</p>
-            <p>
-    <a href="https://www.google.com/maps/dir//Mechelsestraat+202,+3000+Leuven/@50.8885373,4.6138412,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c160c31763da33:0x13b27b33cd030033!2m2!1d4.6962415!2d50.8885663?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" 
-       target="_blank" 
-       rel="noopener noreferrer">
-       📍 Bekijk route op Google Maps
-    </a>
-</p>
-<section class="catalogus">
-    <h2>Meer dan 100 wijnen en spirits te proeven; bekijk de proeflijst:</h2>
-    <a href="https://online.fliphtml5.com/gjgqo/yzax/" target="_blank">
-        <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/catalog.png" alt="Bekijk Catalogus">
-    </a>
-</section>
+  <!-- Hero + Slider -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <h2 class="hero-title">Ontdek, proef, beleef.</h2>
+        <p class="hero-subtitle">Avonden vol wijn, spirits en ambiance — door en voor sommeliers & liefhebbers.</p>
+      </div>
 
+      <div class="slider" aria-label="Sfeerbeelden">
+        <div class="slides">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/april2025.jpg" alt="Lente tasting 2025 sfeerbeeld">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/dec2024.jpg" alt="Winter tasting 2024 sfeerbeeld">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/april2024.jpg" alt="Lente tasting 2024 sfeerbeeld">
+        </div>
+        <div class="slider-hint">Swipe/scroll →</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volgende tasting (Teaser) -->
+  <section id="volgende" class="section">
+    <div class="container">
+      <h2 class="section-title">Volgende tasting</h2>
+      <div class="card-grid one">
+        <article class="card highlight">
+          <div class="card-body">
+            <h3 class="card-title">Winter Tasting 2025</h3>
+            <p class="card-meta">Datum & locatie: <em>Wordt bevestigd</em></p>
+            <p class="card-text">
+              Save the date! We werken aan een sfeervolle wintereditie met warme parels in het glas.
+              Hou deze pagina in de gaten — details volgen snel.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="btn" href="#contact">Op de hoogte blijven</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalogus (booklet-link) -->
+  <section id="catalogus" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Catalogus</h2>
+      <div class="catalog-wrap">
+        <a class="catalog-card" href="https://online.fliphtml5.com/gjgqo/yzax/" target="_blank" rel="noopener">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/catalog.png" alt="Bekijk catalogus (flip-book)" />
+          <div class="catalog-info">
+            <h3>Flip-book proeflijst</h3>
+            <p>Meer dan 100 wijnen en spirits — blader in handig boekje-formaat.</p>
+            <span class="btn ghost">Open flip-book</span>
+          </div>
         </a>
+      </div>
+    </div>
+  </section>
 
-    <section class="dealers">
-        <h2>Deelnemende Wijnhandelaars</h2>
-        <div class="logos">
-            <a href="https://www.wijnstroom.be/" target="_blank"><img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer2.png" alt="Wijnstroom"></a>
-            <a href="https://www.hamatuswines.be/" target="_blank"><img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer3.png" alt="Dealer 3"></a>
-            <a href="https://www.wildwines.be/" target="_blank"><img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer4.png" alt="Dealer 4"></a>
-            <a href="https://espavino.be/" target="_blank"><img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer5.png" alt="Dealer 5"></a>
-            <a href="https://www.whiskymine.com" target="_blank"><img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer1.jpg" alt="Whiskymine"></a>
-        </div>
-    </section>
-   
-    <section class="events">
-        <h2>Voorbije Evenementen</h2>
-        <div class="event">
-            <h3>December 2024</h3>
-            <p>Winter tasting 2024 @ kerk Veltem</p>
-            <img class="clickable-image" src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/dec2024.jpg" alt="Winter tasting 2024">
-        </div>
-        <div class="event">
-            <h3>April 2024</h3>
-            <p>Lente tasting 2024 @ kerk Veltem</p>
-            <img class="clickable-image" src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/april2024.jpg" alt="Lente tasting 2024">
-        </div>
-    </section>
-    
-    <section class="contact">
-        <h2>Contact</h2>
-        <button onclick="openEmails()">Contacteer ons</button>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 SommEvents</p>
-    </footer>
+  <!-- Wijnhandelaars -->
+  <section id="dealers" class="section">
+    <div class="container">
+      <h2 class="section-title">Deelnemende wijnhandelaars</h2>
+      <div class="logo-grid">
+        <a href="https://www.wijnstroom.be/" target="_blank" rel="noopener" class="logo-card">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer2.png" alt="Wijnstroom">
+        </a>
+        <a href="https://www.hamatuswines.be/" target="_blank" rel="noopener" class="logo-card">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer3.png" alt="Hamatus Wines">
+        </a>
+        <a href="https://www.wildwines.be/" target="_blank" rel="noopener" class="logo-card">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer4.png" alt="Wild Wines">
+        </a>
+        <a href="https://espavino.be/" target="_blank" rel="noopener" class="logo-card">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer5.png" alt="Espavino">
+        </a>
+        <a href="https://www.whiskymine.com" target="_blank" rel="noopener" class="logo-card">
+          <img src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/Dealer1.jpg" alt="Whiskymine">
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        function openEmails() {
-            window.location.href = "mailto:info@whiskymine.com";
-        }
+  <!-- Voorbije evenementen -->
+  <section id="archief" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Voorbije evenementen</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img class="card-media" src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/april2025.jpg" alt="Spring Tasting 2025 Keizersberg">
+          <div class="card-body">
+            <h3 class="card-title">Spring Tasting @ Keizersberg (Leuven)</h3>
+            <p class="card-meta">Zat 26 & Zon 27 april 2025</p>
+            <p class="card-text">Unieke proeverij in de historische Abdij Keizersberg.</p>
+            <p class="card-text small">
+              📍 Mechelsestraat 202, 3000 Leuven —
+              <a class="link" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/dir//Mechelsestraat+202,+3000+Leuven/@50.8885373,4.6138412,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c160c31763da33:0x13b27b33cd030033!2m2!1d4.6962415!2d50.8885663?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D">
+                 Route op Google Maps
+              </a>
+            </p>
+          </div>
+        </article>
 
-        document.querySelectorAll('.clickable-image').forEach(img => {
-            img.addEventListener('click', () => {
-                window.open(img.src, '_blank');
-            });
-        });
-    </script>
+        <article class="card">
+          <img class="card-media" src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/dec2024.jpg" alt="Winter Tasting 2024 Veltem">
+          <div class="card-body">
+            <h3 class="card-title">Winter Tasting 2024</h3>
+            <p class="card-meta">December 2024 — Kerk Veltem</p>
+            <p class="card-text">Gezellige wintereditie met hartverwarmende selectie.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-media" src="https://raw.githubusercontent.com/SommsWell/tasting2025/main/images/april2024.jpg" alt="Lente Tasting 2024 Veltem">
+          <div class="card-body">
+            <h3 class="card-title">Lente Tasting 2024</h3>
+            <p class="card-meta">April 2024 — Kerk Veltem</p>
+            <p class="card-text">Frisse ontdekkingen en bruisende sfeer.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-card">
+        <p>Vragen of wil je mee proeven met je assortiment? Laat van je horen.</p>
+        <div class="contact-actions">
+          <a class="btn" href="mailto:info@whiskymine.com">Mail ons</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 SommEvents</p>
+    </div>
+  </footer>
 </body>
 </html>
